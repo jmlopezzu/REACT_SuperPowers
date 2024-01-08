@@ -1,0 +1,37 @@
+import './App.css'
+import { useMovies } from './hooks/useMovies.js'
+import { Movies } from './components/Movies.jsx'
+
+function App() {
+  const { movies } = useMovies()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const fields = Object.fromEntries(
+      new window.FormData(event.target)
+      )
+    console.log(fields)
+  }
+
+  return (
+  <div className ='page'>
+
+    <header>
+      <h1>Buscador de peliculas</h1>
+      <form className='form' onSubmit={handleSubmit}>
+        <input name='query' placeholder='Avengers, Star wars, The Matrix...' />
+        <input name='otro' placeholder='Avengers, Star wars, The Matrix...' />
+        <input name='alt' placeholder='Avengers, Star wars, The Matrix...' />
+        <input name='dsasd' placeholder='Avengers, Star wars, The Matrix...' />        
+        <button type='submit'>Buscar</button>
+      </form>
+    </header>
+
+    <main>
+      <Movies movies={movies} />
+    </main>
+    </div>
+  )
+}
+
+export default App

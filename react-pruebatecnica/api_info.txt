@@ -1,0 +1,51 @@
+#   Enunciado
+
+App para buscar peliculas
+
+Api
+
+- https://www.omdbapi.com/
+- API_KEY: 4287ad07
+
+- https://www.omdbapi.com/?apikey=4287ad07&s=Avengers
+
+Requerimientos:
+
+- Un input para buscar la pelicula y un boton para buscar.
+- Lista de peliculas encontradas que contenga titulo, año y poster.
+- Hacer que el formulario funcione
+- Hacer el fetching de datos a la API
+- Las peliculas se deben mostrar en un grid responsive.
+
+Primera iteración:
+
+- Evitar que se haga la misma busqueda dos veces seguidas.
+- Haz que la busqueda se haga automaticamente al escribir.
+- Evia que se haga la busqueda continuamente al escribir (debounce).
+
+
+
+RESUMEN
+
+HACER FORMULARIO
+FETCH DE DATOS
+
+Entendiendo los hooks: useMemo, useCallback, useRef
+
+
+
+nvm install 18
+nvm use 18
+
+
+
+
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+source ~/.zshrc
+
+
+
